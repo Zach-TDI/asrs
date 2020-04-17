@@ -17,29 +17,29 @@ while numb == 1:
 	jakesStepper = input(">>>>   ")
 
 	if jakesStepper == "0":
-		bus.write_byte(addr, 0x0) # move to position home
+		bus.write_byte(addr, 0x0) # move from 0 - 1
 	elif jakesStepper == "1":
-		bus.write_byte(addr, 0x1) # move to Red
+		bus.write_byte(addr, 0x1) # move from 0 - 2
 	elif jakesStepper == "2":
-		bus.write_byte(addr, 0x2) # move to Green
+		bus.write_byte(addr, 0x2) # move from 0 - 3
 	elif jakesStepper == "3":
-		bus.write_byte(addr, 0x3) # move to Blue
+		bus.write_byte(addr, 0x3) # move from 1 - 0
 	elif jakesStepper == "0":
-		bus.write_byte(addr, 0x4) # move to position home
+		bus.write_byte(addr, 0x4) # move from 1 - 2
 	elif jakesStepper == "1":
-		bus.write_byte(addr, 0x5) # move to Red
+		bus.write_byte(addr, 0x5) # move from 1 - 3
 	elif jakesStepper == "2":
-		bus.write_byte(addr, 0x6) # move to Green
+		bus.write_byte(addr, 0x6) # move from 2 - 0
 	elif jakesStepper == "3":
-		bus.write_byte(addr, 0x7) # move to Blue
+		bus.write_byte(addr, 0x7) # move from 2 - 1
 	elif jakesStepper == "0":
-		bus.write_byte(addr, 0x8) # move to position home
+		bus.write_byte(addr, 0x8) # move from 2 - 3
 	elif jakesStepper == "1":
-		bus.write_byte(addr, 0x9) # move to Red
+		bus.write_byte(addr, 0x9) # move from 3 - 0
 	elif jakesStepper == "2":
-		bus.write_byte(addr, 0xA) # move to Green
+		bus.write_byte(addr, 0xA) # move from 3 - 1
 	elif jakesStepper == "3":
-		bus.write_byte(addr, 0xB) # move to Blue
+		bus.write_byte(addr, 0xB) # move from 3 - 2
 	else:
 		numb = 0
 
